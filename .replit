@@ -4,11 +4,6 @@ run = ["java", "-classpath", ".:target/dependency/*", "Main"]
 entrypoint = "Main.java"
 hidden = ["**/*.class"]
 
-[packager]
-language = "java"
-
-[packager.features]
-packageSearch = true
 
 [languages.java]
 pattern = "**/*.java"
@@ -18,9 +13,6 @@ start = ["jdt-language-server"]
 
 [unitTest]
 language = "java"
-
-[nix]
-channel = "stable-21_11"
 
 [debugger]
 support = true
